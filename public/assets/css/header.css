@@ -92,7 +92,7 @@
 .mainnav ul.main_menu li.current > a, 
 .mainnav ul.main_menu li.active > a, 
 .mainnav ul.main_menu li:hover > a {
-	color: var(--main-color);
+	color: var(--white-color);
 }
 
 .mainnav ul.main_menu li .sub-menu {
@@ -413,8 +413,8 @@ body.mr_menu_active .mr_menu_overlay {
 	display: none;
 }
 /* Sticky/Fixed Nav */
-.fixed_menu .header{
-	background: var(--white-color);
+.fixed_menu .header {
+	background: rgb(255, 255, 255);
 	position: fixed;
 	top: -50px;
 	opacity: 0;
@@ -425,7 +425,9 @@ body.mr_menu_active .mr_menu_overlay {
 	transition: all 0.2s ease-in-out;
 	transform: perspective(300px) rotateX(0deg);
 	transform-origin: top;
+	border-radius: 15px; /* Sesuaikan dengan kebutuhan */
 }
+
 .sticky .fixed_menu .header{
 	top: 0;
 	opacity: 1;

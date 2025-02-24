@@ -159,7 +159,18 @@
                                     <h4><a href="destination-details.html">{{ $tour['title'] }}</a></h4>
                                     <div class="d-flex align-items-center flex-wrap justify-content-center">
                                         <div class="gallery-block_two-location">{{ $tour['count'] }} Packages</div>
-                                        <div class="gallery-block_two-price">2,000 - 2,500</div>
+                                        <div class="card filter-card" style="background-color: 
+                                                @if($tour['filter'] == 'Best Seller') #ff5733 
+                                                @elseif($tour['filter'] == 'Nature') #28a745 
+                                                @elseif($tour['filter'] == 'Culinery') #FF00D4FF 
+                                                @elseif($tour['filter'] == 'Culture') #A72828FF 
+                                                @elseif($tour['filter'] == 'City') #007bff 
+                                                @elseif($tour['filter'] == 'Seasonal') #ffc107 
+                                                @elseif($tour['filter'] == 'Historical') #6f42c1 
+                                                @else #cccccc @endif; color: white; padding: 5px 10px; border-radius: 8px; font-weight: bold; margin-left: 20px; margin-top: 10px">
+                                                <a>{{ $tour['filter'] }}</a>
+                                            </div>
+                                        {{-- <div class="gallery-block_two-price">2,000 - 2,500</div> --}}
                                     </div>
                                     <div class="gallery-block_two-text-two">With long ancient history, Greece has so many beautiful landscapes and historical places to offer.</div>
                                     <div class="gallery-block_two-button">
@@ -171,22 +182,20 @@
                                 <div class="overlay-content">
                                     <h3 class="gallery-block_two-title"><a href="destination-details.html">{{ $tour['title'] }}</a></h3>
                                     
-                                    <div class="card filter-card" style="background-color: 
-                                        @if($tour['filter'] == 'Best Seller') #ff5733 
-                                        @elseif($tour['filter'] == 'Nature') #28a745 
-                                        @elseif($tour['filter'] == 'Culinery') #FF00D4FF 
-                                        @elseif($tour['filter'] == 'Culture') #A72828FF 
-                                        @elseif($tour['filter'] == 'City') #007bff 
-                                        @elseif($tour['filter'] == 'Seasonal') #ffc107 
-                                        @elseif($tour['filter'] == 'Historical') #6f42c1 
-                                        @else #cccccc @endif; color: white; padding: 5px 10px; border-radius: 8px; font-weight: bold;">
-                                        <a>{{ $tour['filter'] }}</a>
-                                    </div>
-                                   
-
                                     <div class="d-flex align-items-center flex-wrap">
                                         <div class="gallery-block_two-location">{{ $tour['count'] }} Packages</div>
-                                        <div class="gallery-block_two-price">2,000 - 2,500</div>
+                                        <div class="card filter-card" style="background-color: 
+                                                @if($tour['filter'] == 'Best Seller') #ff5733 
+                                                @elseif($tour['filter'] == 'Nature') #28a745 
+                                                @elseif($tour['filter'] == 'Culinery') #FF00D4FF 
+                                                @elseif($tour['filter'] == 'Culture') #A72828FF 
+                                                @elseif($tour['filter'] == 'City') #007bff 
+                                                @elseif($tour['filter'] == 'Seasonal') #ffc107 
+                                                @elseif($tour['filter'] == 'Historical') #6f42c1 
+                                                @else #cccccc @endif; color: white; padding: 5px 10px; border-radius: 8px; font-weight: bold; margin-left: 20px; margin-top: 10px">
+                                                <a>{{ $tour['filter'] }}</a>
+                                            </div>
+                                        {{-- <div class="gallery-block_two-price">Rp. 700.000 - Rp. 1.500.000</div> --}}
                                     </div>
                                 </div>
                             </div>

@@ -63,7 +63,10 @@
                         <span class="toggle_line"></span>
                         <span class="toggle_line"></span>
                     </div>
-                    
+
+                    {{-- <div class="button-box d-none d-sm-block" id="google_translate_element"> --}}
+                        
+                    </div>
                 </div>
             </div>
         </div>

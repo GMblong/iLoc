@@ -298,19 +298,15 @@
                             <div class="form-group">
                                 <label>Extra Facilities</label>
                                 <select name="currency" class="custom-select-box">
-                                    <option>Airport Pickup ($ 1,000)</option>
-                                    <option>Airport Pickup ($ 2,000)</option>
-                                    <option>Airport Pickup ($ 3,000)</option>
-                                    <option>Airport Pickup ($ 4,000)</option>
-                                    <option>Airport Pickup ($ 5,000)</option>
-                                    <option>Airport Pickup ($ 6,000)</option>
+                                    <option>Travel (Rp. 150.000)</option>
+                                    <option>Bus (Rp 75.000)</option>
                                 </select>
                             </div>
                             <div class="form-group">
                                 <div class="d-flex justify-content-between align-items-center">
                                     <div class="total-payment">
                                         Total Payment
-                                        <span>$ 2,200</span>
+                                        <span>Rp. 700.000</span>
                                     </div>
                                     <button class="btn-style-two theme-btn">
                                         <span class="btn-wrap">

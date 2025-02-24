@@ -4,6 +4,36 @@
 @endsection
 
 @section('content')
+<section class="banner-one">
+
+    <div class="banner-one_image-layer" style="filter: grayscale(100%);">
+        <video autoplay loop muted playsinline>
+            <source src="{{ asset('assets/img/videos/footage.mp4') }}" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    <div class="background-one_overlay"></div>
+
+    <div class="banner-one_overlay"></div>
+    <div class="auto-container">
+        <!-- Content Column -->
+        <div class="banner-one_content">
+            <div class="banner-one_content-inner">
+                <div class="banner-one_title">
+                    
+                </div>
+                <h1 class="banner-one_heading">
+                    <span class="large-letter">C</span>ontac<span class="large-letter">t</span>
+                </h1> 
+                <div class="banner-one_text">
+                    Indonesian The Land of Content
+                </div>
+                <div class="banner-one_x"></div>
+            </div>
+            
+        </div>
+    </div>
+</section>
 <!-- Gallery Five -->
 <section class="booking-one">
     <div class="auto-container">
@@ -78,8 +108,9 @@
             <div class="map-column col-lg-4 col-md-5 col-sm-12">
                 <!-- Map Four -->
                 <div class="map-four">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d805184.6331292129!2d144.49266890254142!3d-37.97123689954809!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad646b5d2ba4df7%3A0x4045675218ccd90!2sMelbourne%20VIC%2C%20Australia!5e0!3m2!1sen!2s!4v1574408946759!5m2!1sen!2s" allowfullscreen=""></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3958.224889036601!2d110.4813098!3d-7.0091602!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e708d5a976844ab%3A0x486af78bc4b1e940!2sRumah%20Risto!5e0!3m2!1sen!2s!4v1708845600000!5m2!1sen!2s" allowfullscreen=""></iframe>
                 </div>
+                
                 <!-- End Map Two -->
             </div>
 
@@ -88,28 +119,4 @@
 </section>
 <!-- End Gallery Five -->
 
-<!-- CTA One -->
-<section class="cta-one" style="background-image: url(images/background/2.jpg)">
-    <div class="auto-container">
-        <!-- Title Box -->
-        <div class="cta-one_title-box">
-            <h1 class="cta-one_heading">start your adventure</h1>
-            <div class="cta-one_text">Sign up for our newsletter and receive exclusive travel deals, insider tips, and destination <br> inspiration. Don't miss out on the adventure - join our mailing list today!</div>
-
-            <!-- Subscribe Box -->
-            <div class="subscribe-box">
-                <form method="post" action="contact.html">
-                    <div class="form-group">
-                        <input type="email" name="email" value="" placeholder="Enter your email address here ..." required>
-                        <button class="submit-btn theme-btn">
-                            Subscribe
-                        </button>
-                    </div>
-                </form>
-            </div>
-
-        </div>
-    </div>
-</section>
-<!-- End CTA One -->
 @endsection

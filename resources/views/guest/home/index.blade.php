@@ -284,7 +284,7 @@
 </section>
 <!-- End Achivements One -->
 
-<!-- News Three -->
+{{-- <!-- News Three -->
 <section class="news-three">
     <div class="auto-container">
         <!-- Sec Title -->
@@ -333,6 +333,6 @@
         </div>
     </div>
 </section>
-<!-- End News Three -->
+<!-- End News Three --> --}}
 
 @endsection

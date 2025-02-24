@@ -1,0 +1,22 @@
+<!-- CSS -->
+<link rel="stylesheet" href="{{ asset('assets/css/animate.css') }}">
+<link rel="stylesheet" href="{{ asset('assets/css/bootstrap.css') }}">
+<link rel="stylesheet" href="{{ asset('assets/css/custom-animate.css') }}">
+<link rel="stylesheet" href="{{ asset('assets/css/flaticon_sky-flat.css') }}">
+<link rel="stylesheet" href="{{ asset('assets/css/flatpickr.css') }}">
+<link rel="stylesheet" href="{{ asset('assets/css/font-awesome.css') }}">
+<link rel="stylesheet" href="{{ asset('assets/css/footer.css') }}">
+<link rel="stylesheet" href="{{ asset('assets/css/global.css') }}">
+<link rel="stylesheet" href="{{ asset('assets/css/header.css') }}">
+<link rel="stylesheet" href="{{ asset('assets/css/hover.css') }}">
+<link rel="stylesheet" href="{{ asset('assets/css/icofont.css') }}">
+<link rel="stylesheet" href="{{ asset('assets/css/jquery-ui.css') }}">
+<link rel="stylesheet" href="{{ asset('assets/css/magnific-popup.css') }}">
+<link rel="stylesheet" href="{{ asset('assets/css/odometer-theme-default.css') }}">
+<link rel="stylesheet" href="{{ asset('assets/css/owl.css') }}">
+<link rel="stylesheet" href="{{ asset('assets/css/preloader.css') }}">
+<link rel="stylesheet" href="{{ asset('assets/css/responsive.css') }}">
+<link rel="stylesheet" href="{{ asset('assets/css/select2.css') }}">
+<link rel="stylesheet" href="{{ asset('assets/css/sidebar.css') }}">
+<link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
+<link rel="stylesheet" href="{{ asset('assets/css/swiper.min.css') }}">

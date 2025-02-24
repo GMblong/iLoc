@@ -7,12 +7,16 @@
 @section('content')
 
 <section class="banner-one">
-    <div class="banner-one_image-layer">
+
+    <div class="banner-one_image-layer" style="filter: grayscale(100%);">
         <video autoplay loop muted playsinline>
             <source src="{{ asset('assets/img/videos/semarang.mp4') }}" type="video/mp4">
             Your browser does not support the video tag.
         </video>
     </div>
+    <div class="background-one_overlay"></div>
+
+    <div class="banner-one_overlay"></div>
     <div class="auto-container">
         <!-- Content Column -->
         <div class="banner-one_content">
@@ -20,18 +24,76 @@
                 <div class="banner-one_title">
                     The City of Content
                 </div>
-                <h1 class="banner-one_heading">Semarang</h1>
+                <h1 class="banner-one_heading">
+                    <span class="large-letter">S</span>emaran<span class="large-letter">g</span>
+                </h1> 
                 <div class="banner-one_text">
                     Discover the hidden gems of Semarang, a city rich in culture, history, and modern creativity. 
                     From vibrant street art to historical landmarks, Semarang is a melting pot of tradition and innovation. 
                     Explore, create, and experience the unique charm of this content-rich destination.
                 </div>
+                <div class="banner-one_x"></div>
             </div>
             
         </div>
     </div>
 </section>
 <!-- End Banner One -->
+
+<!-- Tour Detail -->
+<section class="tour-detail">
+    <div class="auto-container">
+        <!-- Itinerary One -->
+        <div class="itinerary-one">
+            <div class="title-box">
+                <div class="d-flex align-items-center justify-content-between flex-wrap">
+                    <h4>Destinations</h4>
+                </div>
+            </div>
+            @php
+            $destinations = [
+                ['title' => 'Kota Lama', 'image' => 'assets/img/gallery/kotalama.jpg', 'filter' => 'Heritage Sites'],
+                ['title' => 'Lawang Sewu', 'image' => 'assets/img/gallery/lawangsewu.jpg', 'filter' => 'Historical Buildings'],
+                ['title' => 'Gereja Blenduk', 'image' => 'assets/img/gallery/gerejablenduk.jpg', 'filter' => 'Palaces & Castles'],
+                ['title' => 'Sam Poo Kong', 'image' => 'assets/img/gallery/sampookong.jpg', 'filter' => 'Palaces & Castles'],
+            ];
+            @endphp  
+            <div class="three-item-carousel owl-carousel owl-theme">
+                @foreach ($destinations as $destination)
+                <!-- Itinerary Block One -->
+                <div class="itinerary-block_one">
+                    <div class="itinerary-block_one-inner">
+                        <div class="itinerary-block_one-image">
+                            <img src="{{ $destination['image']}}" alt="" />
+                            <div class="itinerary-block_one-content">
+                                <h5 class="itinerary-block_one-heading"><a href="destinations">{{ $destination['title']}}</a></h5>
+                                {{-- <div class="itinerary-block_one-date">Estimated time: 12-14 hours</div> --}}
+                                
+                                <div class="card filter-card mt-3" style="background-color: 
+                                    @if($destination['filter'] == 'Hotel') #ff5733 
+                                    @elseif($destination['filter'] == 'Cafe & Resto') #28a745 
+                                    @elseif($destination['filter'] == 'Art') #FF00D4FF 
+                                    @elseif($destination['filter'] == 'Heritage Sites') #A72828FF 
+                                    @elseif($destination['filter'] == 'Museums') #007bff 
+                                    @elseif($destination['filter'] == 'Palaces & Castles') #ffc107 
+                                    @elseif($destination['filter'] == 'Historical Buildings') #6f42c1 
+                                    @else #cccccc @endif; color: white; padding: 5px 10px; border-radius: 8px; font-weight: bold;">
+                                    <a>{{ $destination['filter'] }}</a>
+                                </div>
+                                <div class="itinerary-block_one-text">Enjoy the cultural old ruins trip experienced tour guides.</div>
+                                <a class="itinerary-block_one-arrow flaticon-next-2" href="destinations"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                @endforeach
+            </div>
+        </div>
+        <!-- End Itinerary Column -->
+
+    </div>
+</section>
+<!-- End Tour Detail -->
 
 <!-- Gallery Five -->
 <section class="gallery-five">

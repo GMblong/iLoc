@@ -8,7 +8,9 @@
 
 <!-- Page Banner -->
 <section class="page-banner">
-    <div class="banner-one_image-layer" style="background-image: url(assets/img/gallery/gedungsongo.jpg)"></div>
+    <div class="banner-one_image-layer" style="background-image: url(assets/img/gallery/gedungsongo.jpg); filter: grayscale(100%);"></div>
+    <div class="background-one_overlay"></div>
+    <div class="banner-one_overlay"></div>
     <div class="auto-container">
         <ul class="page-breadbrumbs">
             <li>The City of Content</li>

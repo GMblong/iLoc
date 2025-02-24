@@ -8,14 +8,16 @@
 
 <!-- Banner One / Style Three -->
 <section class="banner-one style-three">
-    <div class="banner-one_image-layer" style="background-image: url(assets/img/videos/footage.mp4)"></div>
-    <div class="banner-one_image-layer">
+    {{-- <div class="banner-one_image-layer" style="background-image: url(assets/img/videos/footage.mp4)"></div> --}}
+    <div class="banner-one_image-layer" style="filter: grayscale(100%);">
         <video autoplay loop muted playsinline>
             <source src="{{ asset('assets/img/videos/footage.mp4') }}" type="video/mp4">
             Your browser does not support the video tag.
         </video>
     </div>
-    
+    <div class="background-one_overlay"></div>
+
+    <div class="banner-home_overlay"></div>
     <div class="auto-container">
         <!-- Content Column -->
         <div class="banner-one_content">
@@ -23,7 +25,9 @@
                 <div class="banner-one_title">
                     The Land of Content
                 </div>
-                <h1 class="banner-one_heading">Indonesia</h1>
+                <h1 class="banner-one_heading">
+                    <span class="large-letter">I</span>ndonesi<span class="large-letter">a</span>
+                </h1>                
                 <div class="banner-one_text">iLoC (Indonesia Land of Content) is a super app that empowers content creators and tourists with exclusive insights, promotes hidden gems, and nurtures talent in the creative industry.</div>
                 <!-- Form Box -->
                 <div class="banner-one_form-box">
@@ -34,7 +38,7 @@
                                 
                                 <div class="col-lg-12 col-md-12 col-sm-12 form-group">
                                     <div class="form-group_inner">
-                                        <label>Destination</label>
+                                        <label>Location</label>
                                         @php
                                             $destinations = [
                                                 'Semarang, Jawa Tengah',
@@ -78,23 +82,24 @@
     <div class="auto-container">
         @php
             $features = [
-                'Customer Delight',
-                'Authentic Adventure',
-                'Creative Community',
-                'Unforgettable Experiences',
-        ];
+                'Portal Super Apps',
+                'Ekosistem Konten',
+                'Kreativitas Hidden Gem',
+                'Promosi Wisata & UMKM',
+            ];
             $icons = [
-                'flaticon-smile-1',
+                'flaticon-tourist',
+                'flaticon-play-button',
                 'flaticon-mountain',
-                'flaticon-flags',
-                'flaticon-clock',
-        ];
+                'flaticon-location',
+            ];
             $texts = [
-                'We deliver the best service and experience for our customer.',
-                'We deliver the real adventure experience for our dear customer.',
-                'We deliver the best service and experience for our customer.',
-                'We deliver the best service and experience for our customer.',
-        ];
+                'Portal super apps bagi content creator dan turis dengan informasi eksklusif.',
+                'Ekosistem industri konten dari hulu ke hilir untuk mendukung kreativitas.',
+                'Menciptakan konten kreatif berpredikat Hiddem Gems dengan nilai lebih.',
+                'Mempromosikan Hidden Gems wisata, UMKM kreatif, dan mencetak SDM terlatih.',
+            ];
+
         @endphp
         <div class="row clearfix">
             @for ($i = 0; $i < count($features); $i++)
@@ -106,7 +111,6 @@
                     </div>
                 </div>
             @endfor
-
         </div>
     </div>
 </section>
@@ -127,8 +131,9 @@
                 <ul class="filter-tabs">
                     <li class="active filter" data-role="button" data-filter="all">all</li>
                     <li class="filter" data-role="button" data-filter=".city">The City of Content</li>
-                    <li class="filter" data-role="button" data-filter=".island">The Island of Content</li>
-                    <li class="filter" data-role="button" data-filter=".province">The Beutifull Province of Content</li>
+                    <li class="filter" data-role="button" data-filter=".creatice">City of Creative Content</li>
+                    <li class="filter" data-role="button" data-filter=".island">Island of Content</li>
+                    <li class="filter" data-role="button" data-filter=".province">The Beautiful Province of Content</li>
                 </ul>
             </div>
 
@@ -188,7 +193,7 @@
                     <div class="faq-two_title-inner">
                         <div class="sec-title_three-title">faq</div>
                         <h2 class="sec-title_three-heading">Frequently Asked Questions</h2>
-                        <div class="faq-two_text">What our clients usually asked about our services and tours.</div>
+                        <div class="faq-two_text">Pertanyaan yang sering diajukan oleh pelanggan kami mengenai layanan dan perjalanan iLoc.</div>
                     </div>
                 </div>
 
@@ -198,16 +203,37 @@
 
                     @php
                         $faqs = [
-                            ['question' => 'What type of travel packages does Vacasky offer?', 'answer' => 'Vacasky offers a wide range of travel packages to destinations around the world, including customized tours, group tours, luxury travel, adventure travel, and more. Our travel specialists work with you to create an itinerary that meets your specific needs and preferences.'],
-                            ['question' => 'How do I book a trip with Vacasky?', 'answer' => 'Vacasky offers a wide range of travel packages to destinations around the world, including customized tours, group tours, luxury travel, adventure travel, and more. Our travel specialists work with you to create an itinerary that meets your specific needs and preferences.'],
-                        ]
+                            ['question' => 'Apa itu iLoc?', 
+                            'answer' => 'iLoc adalah penyedia layanan perjalanan yang menawarkan pengalaman wisata unik ke berbagai destinasi pilihan, termasuk wisata budaya, alam, dan petualangan.'],
+                            
+                            ['question' => 'Bagaimana cara memesan perjalanan dengan iLoc?', 
+                            'answer' => 'Anda dapat memesan perjalanan melalui website resmi iLoc atau menghubungi tim layanan pelanggan kami untuk mendapatkan bantuan dalam merancang itinerary yang sesuai dengan kebutuhan Anda.'],
+                            
+                            ['question' => 'Apa saja yang termasuk dalam paket perjalanan iLoc?', 
+                            'answer' => 'Setiap paket perjalanan iLoc mencakup akomodasi, transportasi, makanan tertentu, dan aktivitas wisata. Detail lengkap dapat ditemukan pada deskripsi setiap paket perjalanan.'],
+                            
+                            ['question' => 'Apakah saya bisa menyesuaikan itinerary perjalanan saya?', 
+                            'answer' => 'Ya, iLoc menyediakan opsi perjalanan yang fleksibel. Anda dapat menyesuaikan itinerary sesuai dengan preferensi dan kebutuhan perjalanan Anda.'],
+                            
+                            ['question' => 'Apakah iLoc menyediakan pemandu wisata?', 
+                            'answer' => 'Ya, semua paket perjalanan iLoc dilengkapi dengan pemandu wisata profesional yang akan membantu Anda menjelajahi destinasi dengan informasi dan pengalaman terbaik.'],
+                            
+                            ['question' => 'Bagaimana kebijakan pembatalan perjalanan di iLoc?', 
+                            'answer' => 'Kebijakan pembatalan tergantung pada jenis paket perjalanan yang Anda pilih. Informasi lebih lanjut mengenai pembatalan dan pengembalian dana dapat ditemukan di syarat dan ketentuan layanan kami.']
+                        ];
                     @endphp
+
                     <ul class="accordion-box">
                         
                         @foreach ($faqs as $faq)
                             <!-- Block -->
                             <li class="accordion block">
-                                <div class="acc-btn"><div class="icon-outer"><span class="icon fa-solid fa-angle-down fa-fw"></span></div>{{ $faq['question'] }}</div>
+                                <div class="acc-btn">
+                                    <div class="icon-outer">
+                                        <span class="icon fa-solid fa-angle-down fa-fw"></span>
+                                    </div>
+                                    {{ $faq['question'] }}
+                                </div>
                                 <div class="acc-content">
                                     <div class="content">
                                         <p>{{ $faq['answer'] }}</p>
@@ -218,8 +244,7 @@
 
                     </ul>
                 </div>
-                
-            </div>
+
         </div>
     </div>
 </section>
@@ -230,16 +255,17 @@
     <div class="auto-container">
         <!-- Sec Title -->
         <div class="sec-title centered">
-            <h2 class="sec-title_heading">ACHIEVEMENTS</h2>
-            <div class="sec-title-text">We are recognized for exceptional travel services.</div>
+            <h2 class="sec-title_heading">ICTA</h2>
+            <div class="sec-title-text">Indonesian Creative Talent Academy.</div>
         </div>
         @php
             $achivements = [
-                ['icon' => 'flaticon-award', 'title' => 'Travel + Leisure', 'text' => 'World\'s Best Tour Operator 2022 United States of America'],
-                ['icon' => 'flaticon-trophy', 'title' => 'World Travel Award', 'text' => 'Best Travel Agency 2023 United Kingdom'],
-                ['icon' => 'flaticon-badge', 'title' => 'TripAdvisor', 'text' => 'Certificate of Excellence 2021 Australia'],
+                ['icon' => 'flaticon-location', 'title' => 'Local Content Scout', 'text' => 'Pencari Hidden Gems di Desanya.'],
+                ['icon' => 'flaticon-play-button', 'title' => 'Local Content Creator', 'text' => 'Pembuat Konten Hidden Gems.'],
+                ['icon' => 'flaticon-tourist', 'title' => 'Local Content Guide', 'text' => 'Tour Guide Yang Paham Konten Menarik di Desanya.'],
             ];
         @endphp
+
         <div class="achivement-carousel owl-carousel owl-theme">
             
             @foreach ($achivements as $achivement)

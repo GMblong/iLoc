@@ -44,6 +44,12 @@
 
 ***/
 
+.large-letter {
+    font-size: 1.1em; /* Atur ukuran lebih besar */
+    font-weight: bold; /* Tambahkan tebal jika perlu */
+}
+
+
 .banner-one{
 	position: relative;
 	text-align: center;
@@ -91,6 +97,59 @@
 	object-fit: cover;
 }
 
+.banner-one_image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Agar gambar tidak terdistorsi */
+}
+
+.banner-home_overlay {
+    position: absolute;
+    bottom: 9.3%;
+    left: 0;
+    width: 100%;
+    height: 15%;
+    
+        /* Gradient overlay dengan 5 area */
+		background: linear-gradient(to top, 
+        rgba(255, 255, 255, 1) 0%,   /* Putih pekat di bawah */
+        rgba(255, 255, 255, 0.8) 20%,  
+        rgba(255, 255, 255, 0.4) 40%,  
+        rgba(255, 255, 255, 0.2) 60%,  
+        rgba(255, 255, 255, 0) 100%   /* Transparan di atas */
+    );
+}
+
+.banner-one_overlay {
+    position: absolute;
+	bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 15%;
+    
+        /* Gradient overlay dengan 5 area */
+		background: linear-gradient(to top, 
+        rgba(255, 255, 255, 1) 0%,   /* Putih pekat di bawah */
+        rgba(255, 255, 255, 0.8) 20%,  
+        rgba(255, 255, 255, 0.4) 40%,  
+        rgba(255, 255, 255, 0.2) 60%,  
+        rgba(255, 255, 255, 0) 100%   /* Transparan di atas */
+    );
+}
+
+.background-one_overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    
+    /* Gradient overlay dengan 5 area */
+    background: rgba(0, 0, 0, 0.5) 100%; /* Transparan di atas */
+    
+}
+
+
 .banner-one_image-layer{
 	position: absolute;
 	left: 0px;
@@ -100,7 +159,7 @@
 	background-size: cover;
 	background-position: center center;
 	background-attachment: fixed;
-	filter: brightness(40%);
+	/* filter: brightness(40%); */
 
 	-webkit-transform:scale(1);
 	-ms-transform:scale(1);
@@ -249,6 +308,17 @@
 	margin-top: var(--margin-top-40);
 	background-color: var(--white-color);
 	box-shadow: 5px 20px 50px rgba(0, 0, 0, 0.1);
+}
+
+.banner-one_x{
+	position: relative;
+	max-width: 1090px;
+	margin: 0 auto;
+	padding: 40px 45px 30px;
+	border-radius: 25px;
+	margin-top: var(--margin-top-40);
+	/* background-color: var(--white-color); */
+	/* box-shadow: 5px 20px 50px rgba(0, 0, 0, 0.1); */
 }
 
 .banner-one_form-box .travel-form{
@@ -713,7 +783,7 @@
 
 .package-one{
 	position: relative;
-	padding: 100px 0px 80px;
+	padding: 30px 0px 30px;
 }
 
 .package-one_more{
@@ -746,8 +816,11 @@
 
 .package-block_one-image img{
 	position: relative;
-	width: 100%;
+	width: 360px;
+	height: 600px;
 	display: block;
+	object-fit: cover; /* Memastikan gambar tidak terdistorsi */
+    object-position: center; /* Menjaga posisi tengah */
 	filter: grayscale(100%);
 	-webkit-transition:all 500ms ease;
 	-ms-transition:all 500ms ease;
@@ -1470,7 +1543,7 @@
 	cursor:pointer;
 	font-weight:500;
 	color: var(--color-two);
-	font-size:var(--font-24);
+	font-size:var(--font-18);
 	transition:all 500ms ease;
 	-ms-transition:all 500ms ease;
 	-o-transition:all 500ms ease;
@@ -1856,7 +1929,7 @@
 .projects-one_filters{
 	position:relative;
 	text-align: center;
-	margin-bottom:var(--margin-bottom-60);
+	margin-bottom:var(--margin-bottom-30);
 }
 
 .project-one .filter-tabs{
@@ -4077,6 +4150,16 @@
 	margin-top: var(--margin-top-10);
 }
 
+.page-banner_title_destinations{
+	position: relative;
+	font-size: 120px;
+	font-weight: 700;
+	line-height: 1em;
+	color: var(--white-color);
+	text-transform: uppercase;
+	margin-top: var(--margin-top-10);
+}
+
 /*** 
 
 ====================================================================
@@ -4087,7 +4170,7 @@
 
 .gallery-five{
 	position: relative;
-	padding: 100px 0px 100px;
+	padding: 0px 0px 100px;
 }
 
 .gallery-five.style-two .auto-container{
@@ -4876,6 +4959,7 @@
 .tour-detail .text{
 	position: relative;
 	line-height: 26px;
+	text-align: justify;
 	color: var(--color-two);
 	font-size: var(--font-16);
 }
@@ -4986,7 +5070,7 @@
 
 .itinerary-one{
 	position: relative;
-	padding: 50px 0px 30px;
+	padding: 10px 0px 10px;
 }
 
 .itinerary-one .owl-dots,
@@ -5021,9 +5105,12 @@
 
 .itinerary-block_one-image img{
 	position: relative;
-	width: 100%;
+	width: 360px;
+	height: 600px;
 	display: block;
 	filter: grayscale(100%);
+	object-fit: cover; /* Memastikan gambar tidak terdistorsi */
+    object-position: center; /* Menjaga posisi tengah */
 	-webkit-transition:all 500ms ease;
 	-ms-transition:all 500ms ease;
 	-o-transition:all 500ms ease;
@@ -5066,6 +5153,7 @@
 
 .itinerary-block_one-heading{
 	position: relative;
+	color: #ffffff;
 	font-family:var(--font-family-Poppins);
 }
 
@@ -5132,7 +5220,7 @@
 	display: inline-block;
 	color: var(--white-color);
 	font-size: var(--font-16);
-	background-color: var(--main-color);
+	background-color: rgb(255, 156, 9);
 	font-family: "flaticon_sky-flat";
 }
 
@@ -6720,7 +6808,7 @@
 	opacity: 0.50;
 	border-radius: 25px;
 	width: 400px;
-    height: 100%;
+    height: 250px;
     display: block;
     object-fit: cover; /* Menjaga proporsi gambar tanpa stretch */
     object-position: center; /* Memusatkan gambar jika dipotong */

@@ -10,31 +10,33 @@
                 </div>
                 <div class="mainnav d-none d-lg-block">
                     <ul class="main_menu">
-                        <li class="menu-item menu-item-has-children"><a href="home">Home</a></li>
+                        <li class="menu-item"><a href="home">Home</a></li>
+                        <li class="menu-item"><a href="about">About Us</a></li>
+                        <li class="menu-item"><a href="contact">Contact</a></li>
 
                         
-                        <li class="menu-item menu-item-has-children"><a href="#">Pages</a>
+                        {{-- <li class="menu-item menu-item-has-children"><a href="#">Pages</a>
                             <ul class="sub-menu">
                                 <li class="menu-item"><a href="about.html">About</a></li>
                                 <li class="menu-item"><a href="contact.html">Contact</a></li>
                                 <li class="menu-item"><a href="login.html">Login</a></li>
                                 <li class="menu-item"><a href="signup.html">Signup</a></li>
                             </ul>
-                        </li>
+                        </li> --}}
 
-                        <li class="menu-item menu-item-has-children"><a href="#">Blog</a>
+                        {{-- <li class="menu-item menu-item-has-children"><a href="#">Blog</a>
                             <ul class="sub-menu">
                                 <li class="menu-item"><a href="blog.html">Our Blog</a></li>
                                 <li class="menu-item"><a href="blog-details.html">Blog Detail</a></li>
                             </ul>
-                        </li>
+                        </li> --}}
 
-                        <li class="menu-item menu-item-has-children"><a href="#">Dashboard</a>
+                        {{-- <li class="menu-item menu-item-has-children"><a href="#">Dashboard</a>
                             <ul class="sub-menu">
                                 <li class="menu-item"><a href="dashboard/dashboard-hotel.html">Admin Dashboard</a></li>
                                 <li class="menu-item"><a href="dashboard/account-profile.html">User Dashboard</a></li>
                             </ul>
-                        </li>
+                        </li> --}}
                     </ul>
                 </div>
     

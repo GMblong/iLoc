@@ -1,14 +1,16 @@
 <!-- Preloader -->
 <div class="loader-wrap">
     <div class="preloader">
-        <div class="preloader-close"><span class="fa fa-times fw-normal"></span></div>
+        {{-- <div class="preloader-close"><span class="fa fa-times fw-normal"></span></div> --}}
         <div id="handle-preloader" class="handle-preloader">
             <div class="animation-preloader">
                 {{-- <div class="spinner"></div> --}}
                 <div class="logo-preloader">
-                    <img src="assets/img/logo.png" alt="Logo" class="animated-logo">
+                    <img src="assets/img/logo/iLocnobr.png" alt="Logo" class="animated-logo">
                 </div>
             </div>  
+            {{-- <img src="assets/img/logo/bg.png" alt="" style="filter: brightness(0) invert(1);"> --}}
+
         </div>
     </div>
 </div>
@@ -45,6 +47,7 @@
 
     .logo-preloader img {
         width: 500px; /* Sesuaikan ukuran logo */
+        filter: brightness(0) invert(1);
         height: auto;
         animation: fadeInOut 2s ease-in-out infinite alternate;
     }

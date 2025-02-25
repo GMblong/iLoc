@@ -1,0 +1,32 @@
+.slider {
+    /* margin-top: 10px; */
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    width: 100%;
+    background-color: rgba(245, 245, 245, 0);
+}
+
+.slide-track {
+    display: flex;
+    align-items: center;
+    gap: 3em;
+    animation: scroll 60s linear infinite;
+    width: calc(200px * 12); /* Menyesuaikan dengan jumlah slide */
+}
+
+.slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slide img {
+    height: 100%;
+    width: 100%; /* Menyesuaikan dengan aspek rasio gambar */
+}
+
+@keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+}

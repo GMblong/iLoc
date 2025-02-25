@@ -27,11 +27,13 @@
 @import url('odometer-theme-default.css');
 @import url('select2.css');
 @import url('flatpickr.css');
+@import url('navbar.css');
+@import url('slider.css');
 
 @media screen and (max-width: 1024px) {
     body {
         min-width: 1024px; /* Mencegah tampilan mengecil di HP */
-        overflow-x: auto; /* Mengaktifkan scroll horizontal jika diperlukan */
+        overflow-x: hidden; /* Mengaktifkan scroll horizontal jika diperlukan */
     }
 }
 
@@ -55,6 +57,12 @@
 	position: relative;
 	text-align: center;
 	padding: 170px 0px 70px;
+}
+
+.area{
+	position: relative;
+	padding-left: 40px;
+	padding-right: 40px;
 }
 
 .banner-one.style-two{
@@ -106,10 +114,10 @@
 
 .banner-home_overlay {
     position: absolute;
-    bottom: 9.3%;
+    bottom: 8.2%;
     left: 0;
     width: 100%;
-    height: 15%;
+    height: 20%;
     
         /* Gradient overlay dengan 5 area */
 		background: linear-gradient(to top, 
@@ -123,7 +131,7 @@
 
 .banner-one_overlay {
     position: absolute;
-	bottom: 0;
+	bottom: 0%;
     left: 0;
     width: 100%;
     height: 15%;
@@ -199,6 +207,8 @@
 .banner-one_content{
 	position: relative;
 	z-index: 1;
+	padding-left: 30px;
+	padding-right: 30px;
 }
 
 .banner-one_content-inner{
@@ -1924,7 +1934,7 @@
 
 .gallery-one{
 	position: relative;
-	padding: 0px 0px 100px;
+	padding: 0px 0px 0px;
 }
 
 .projects-one_filters{
@@ -3733,7 +3743,7 @@
 }
 
 .testimonial-three .sec-title_three{
-	margin-bottom: var(--margin-bottom-25);
+	margin-bottom: var(--margin-bottom-10);
 }
 
 .testimonial-three_image-column{

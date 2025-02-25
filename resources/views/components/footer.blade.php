@@ -7,11 +7,9 @@
                 <div class="d-flex align-items-center justify-content-between flex-wrap">
                     <div class="footer-logo"><a href="index.html"><img src="images/footer-logo-2.svg" alt="" title=""></a></div>
                     <ul class="footer-nav">
-                        <li><a href="#">Destinations</a></li>
-                        <li><a href="#">Tours</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="home">Destinations</a></li>
+                        <li><a href="about">About</a></li>
+                        <li><a href="contact">Contact</a></li>
                     </ul>
                     <!-- Social Box -->
                     <div class="footer-social_box">

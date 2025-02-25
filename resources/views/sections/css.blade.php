@@ -8,6 +8,8 @@
 <link rel="stylesheet" href="{{ asset('assets/css/footer.css') }}">
 <link rel="stylesheet" href="{{ asset('assets/css/global.css') }}">
 <link rel="stylesheet" href="{{ asset('assets/css/header.css') }}">
+<link rel="stylesheet" href="{{ asset('assets/css/navbar.css') }}">
+<link rel="stylesheet" href="{{ asset('assets/css/slider.css') }}">
 <link rel="stylesheet" href="{{ asset('assets/css/hover.css') }}">
 <link rel="stylesheet" href="{{ asset('assets/css/icofont.css') }}">
 <link rel="stylesheet" href="{{ asset('assets/css/jquery-ui.css') }}">

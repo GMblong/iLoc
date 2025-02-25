@@ -1,7 +1,8 @@
 /* Preloader */
 
-.handle-preloader{
-	background-color:#0099ff;
+.handle-preloader {
+  position: relative;
+  background: radial-gradient(circle, #38b3ff 0%, #012d59 100%);
 }
 
 .handle-preloader {

@@ -21,6 +21,7 @@
     <div class="page-wrapper"> 
         @include('components.preloader')
             
+        {{-- @include('components.sidebar') --}}
         @include('components.navbar')
 
         @yield('content')

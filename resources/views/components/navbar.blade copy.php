@@ -7,25 +7,24 @@
             </div>
         </div>
         <div class="nav-but-wrap">
-            <div class="menu-icon hover-target">
-                <span class="menu-icon__line menu-icon__line-left"></span>
-                <span class="menu-icon__line"></span>
-                <span class="menu-icon__line menu-icon__line-right"></span>
-            </div>					
-        </div>					
-    </div>				
+        <div class="menu-icon hover-target circle">
+            <span class="menu-icon__line menu-icon__line-left"></span>
+            <span class="menu-icon__line"></span>
+            <span class="menu-icon__line menu-icon__line-right"></span>
+        </div>        
+        </div>          
+    </div>        
 </header>
 
 <div class="nav">
     <div class="nav__content">
         <ul class="nav__list">
-            <li class="nav__list-item"><a href="home" class="hover-target">home</a></li>
-            <li class="nav__list-item"><a href="about" class="hover-target">about us</a></li>
-            <li class="nav__list-item"><a href="contact" class="hover-target">contact</a></li>
+        <li class="nav__list-item"><a href="home" class="hover-target">home</a></li>
+        <li class="nav__list-item"><a href="about" class="hover-target">about us</a></li>
+        <li class="nav__list-item"><a href="contact" class="hover-target">contact</a></li>
         </ul>
     </div>
-</div>		
-
+</div>    
 
 <div class='cursor' id="cursor"></div>
 <div class='cursor2' id="cursor2"></div>
